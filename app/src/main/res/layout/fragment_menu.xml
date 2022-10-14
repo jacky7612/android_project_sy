@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tech.syapp.MenuFragment"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="116dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="153dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_logo5_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="380dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_round_rect"
+        android:text="關於盛佑"
+        android:textColor="@color/btnborder"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInquiryreg"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="380dp"
+        android:layout_height="82dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ic_round_rect"
+        android:text="掛號"
+        android:textColor="@color/btnborder"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddr"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnInquiryreg"
+        android:layout_width="380dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ic_round_rect"
+        android:text="取消掛號"
+        android:textColor="@color/btnborder"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAddr"
+        android:layout_width="273dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableEnd="@drawable/ic_place"
+        android:drawableRight="@drawable/ic_place"
+        android:text="地址：台南市北區臨安路二段209號"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="盛佑診所"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
