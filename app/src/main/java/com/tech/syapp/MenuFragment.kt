@@ -53,6 +53,10 @@ class MenuFragment : Fragment() {
         btnInquiryreg.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_inquiryregFragment)
         }
+        val btnQueryreg = view.findViewById<Button>(R.id.btnQueryreg)
+        btnQueryreg.setOnClickListener {
+            findNavController().navigate(R.id.action_menuFragment_to_queryregFragment)
+        }
         val btnAbout = view.findViewById<Button>(R.id.btnAbout)
         btnAbout.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_aboutFragment)

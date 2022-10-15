@@ -12,7 +12,7 @@
         android:scaleType="fitCenter"
         android:scaleX="2.5"
         android:scaleY="2.8"
-        android:src="@color/sybackgroundcolor"
+        android:src="@drawable/ic_sy_background"
         tools:layout_editor_absoluteX="-4dp"
         tools:layout_editor_absoluteY="104dp" />
 

@@ -19,66 +19,85 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btnAbout"
-        android:layout_width="380dp"
-        android:layout_height="82dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="28dp"
-        android:background="@drawable/ic_round_rect"
-        android:text="關於盛佑"
-        android:textColor="@color/btnborder"
-        android:textSize="34sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnInquiryreg"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="380dp"
-        android:layout_height="82dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/ic_round_rect"
-        android:text="掛號"
-        android:textColor="@color/btnborder"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddr"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_round_rect"
+            android:text="掛號"
+            android:textColor="@color/btnborder"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btnInquiryreg"
-        android:layout_width="380dp"
-        android:layout_height="82dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/ic_round_rect"
-        android:text="取消掛號"
-        android:textColor="@color/btnborder"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btnInquiryreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_round_rect"
+            android:text="取消掛號"
+            android:textColor="@color/btnborder"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnQueryreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_round_rect"
+            android:text="查詢掛號"
+            android:textColor="@color/btnborder"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_round_rect"
+            android:text="關於盛佑"
+            android:textColor="@color/btnborder"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnAddr"
         android:layout_width="273dp"
         android:layout_height="42dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="28dp"
         android:background="?attr/selectableItemBackground"
         android:drawableEnd="@drawable/ic_place"
         android:drawableRight="@drawable/ic_place"
         android:text="地址：台南市北區臨安路二段209號"
-        android:textColor="@color/white"
+        android:textColor="@color/blue"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/textView"

@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="btnborder">#8b7c72</color>
     <color name="sybackgroundcolor">#aca199</color>
+    <color name="blue">#FF0000FF</color>
+
 </resources>

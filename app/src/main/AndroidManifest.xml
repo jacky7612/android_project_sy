@@ -9,8 +9,8 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/ic_launcher"
-        android:label=""
-        android:roundIcon="@drawable/ic_launcher_round"
+        android:label="盛佑診所"
+        android:roundIcon="@drawable/ic_app_icon_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.SYApp"
         tools:targetApi="31">
