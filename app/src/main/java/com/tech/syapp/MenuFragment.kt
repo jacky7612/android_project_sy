@@ -61,12 +61,14 @@ class MenuFragment : Fragment() {
         btnAbout.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_aboutFragment)
         }
-
+        var addrTitle = getString(R.string.sy_addr_title)
+        var addrContent = getString(R.string.sy_addr_content)
         val btnAddr = view.findViewById<Button>(R.id.btnAddr)
+        btnAddr.text = addrTitle + addrContent
         btnAddr.setOnClickListener() {
             val intent = Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://www.google.com/maps/search/?api=1&query="+ "台南市北區臨安路二段209號")
+                Uri.parse("https://www.google.com/maps/search/?api=1&query=" + addrContent)
             //"http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"
             )
             startActivity(intent)
