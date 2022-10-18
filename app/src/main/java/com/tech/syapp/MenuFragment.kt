@@ -1,5 +1,6 @@
 package com.tech.syapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -42,6 +43,7 @@ class MenuFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -69,7 +71,7 @@ class MenuFragment : Fragment() {
             val intent = Intent(
                 Intent.ACTION_VIEW,
                 Uri.parse("https://www.google.com/maps/search/?api=1&query=" + addrContent)
-            //"http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"
+                //"http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"
             )
             startActivity(intent)
         }
